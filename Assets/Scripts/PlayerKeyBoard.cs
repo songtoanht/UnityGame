@@ -20,11 +20,12 @@ public class PlayerKeyBoard : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        
 		
 	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
+
+    // Update is called once per frame
+    void FixedUpdate () {
         PlayerMoveKeyBoard();
 	}
 

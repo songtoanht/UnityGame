@@ -18,12 +18,12 @@ public class PlayerJoystick : MonoBehaviour {
     {
         myBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        RuntimeJNI.init();
     }
 
 
     // Use this for initialization
     void Start () {
-		
 	}
 
     public void setMoveLeft(bool moveLeft)
@@ -36,6 +36,7 @@ public class PlayerJoystick : MonoBehaviour {
     {
         moveLeft = moveRight = false;
         anim.SetBool("walk", false);
+        //RuntimeJNI.endSession();
     }
 
     // Update is called once per frame
